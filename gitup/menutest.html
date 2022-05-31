@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="/jmhproject/css/menutest.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script src="https://kit.fontawesome.com/8593beab87.js" crossorigin="anonymous"></script>
+<script src="/jmhproject/js/menujs.js"></script>
+<title>Insert title here</title>
+</head>
+<body>
+	<nav class="navbar">
+		<div class="navbar_logo">
+			<i class="fa-solid fa-bird"></i>
+			<a href="">DreamCoding</a>
+		</div>
+		
+		<ul class="navbar_menu">
+			<li><a href="">HOME</a></li>
+			<li><a href="">ABOUT</a></li>
+			<li><a href="">MENU</a></li>
+			<li><a href="">WHERE</a></li>
+			<li><a href="">DLDDU</a></li>
+			<li><a href="">LOGIN</a></li>
+		</ul>
+		
+		<ul class="navbar_icons">
+			<li><i class="fa-brands fa-twitter"></i></li>
+			<li><i class="fa-brands fa-twitch"></i></li>
+		</ul>
+		
+		<a href="#" class="navbar_toogleBtn">
+		<i class="fa-solid fa-bars"></i>
+		</a>
+	</nav>
+	
+<script>
+const toggleBtn = document.querySelector('.navbar_toogleBtn');
+const menu = document.querySelector('.navbar_menu');
+const icons = document.querySelector('.navbar_icons');
+/*클릭이 될때마다 지정된 함수를 호출해줘*/
+toggleBtn.addEventListener('click', () => {
+	menu.classList.toggle('active');
+	icons.classList.toggle('active');
+});
+
+</script>
+
+
+
+</body>
+</html>
